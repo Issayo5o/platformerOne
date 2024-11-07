@@ -27,11 +27,11 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
     // flip player when moving left and right
         if (horizontalInput > .01f){
-            transform.localScale = Vector3.one;
+            transform.localScale = new Vector3(0.1f,0.1f,1);
 
         }
         else if (horizontalInput > -.01f){
-            transform.localScale = new Vector3(-1,1,1);
+            transform.localScale = new Vector3(0.1f,0.1f,1);
             
         }
         
