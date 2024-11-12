@@ -2,9 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "ArrayListSorter",
+            "request": "launch",
+            "mainClass": "ArrayListSorter",
+            "projectName": "platformerOne_c03c9a14"
+        },
+        {
             "name": "Attach to Unity",
             "type": "vstuc",
             "request": "attach"
         }
-     ]
+    ]
 }
