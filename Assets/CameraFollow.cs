@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public float followSpeed = 2f; // How fast camera moves to target
+    public float followSpeed = 7.48f; // How fast camera moves to target
     public float yOffset = 1.84f; // Height of camera
     public Transform target; // Gives position of player
 
