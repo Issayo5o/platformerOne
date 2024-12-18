@@ -22,3 +22,4 @@ public class ScrollingBackground : MonoBehaviour
         mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
     }
 }
+//Issa was here!
