@@ -26,14 +26,20 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
     // flip player when moving left and right
+        
         if (horizontalInput > .01f){
             transform.localScale = new Vector3(0.1f,0.1f,1);
 
         }
-        else if (horizontalInput > -.01f){
+        else if (horizontalInput == 0){
             transform.localScale = new Vector3(0.1f,0.1f,1);
             
         }
+        else if (horizontalInput > -.01f){
+            transform.localScale = new Vector3(-0.1f,0.1f,1);
+            
+        }
+        
         
         if(Input.GetKey(KeyCode.Space) && grounded)
         {
