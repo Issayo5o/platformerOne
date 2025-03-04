@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("---------- Audio Clip ---------")]
     public AudioClip background;
+    public AudioClip running;
     public AudioClip jumping;
     //add more
 

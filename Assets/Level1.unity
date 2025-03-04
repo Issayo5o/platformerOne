@@ -759,8 +759,8 @@ MonoBehaviour:
   gameOver: {fileID: 1129141528}
   gameOverText: {fileID: 1541844626}
   restart: {fileID: 376085327}
-  speed: 7
-  jumpSpeed: 14
+  speed: 6
+  jumpSpeed: 12.5
   Red_Heart: {fileID: 1175448472}
   Red_Heart2: {fileID: 527148053}
   Red_Heart3: {fileID: 627871410}
@@ -1115,6 +1115,7 @@ MonoBehaviour:
   musicSource: {fileID: 1799658708}
   SFXSource: {fileID: 147192248}
   background: {fileID: 8300000, guid: c3e731051d1134e968647cb983635693, type: 3}
+  running: {fileID: 0}
   jumping: {fileID: 0}
 --- !u!1 &527148051
 GameObject:
