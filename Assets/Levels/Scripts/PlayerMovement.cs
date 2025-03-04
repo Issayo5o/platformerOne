@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
 
     public GameOver gameOver;
-    public TextMeshProUGUI gameOverText;
+    public Image gameOverText;
     public Button restart;
 
     private Rigidbody2D body;
@@ -112,6 +112,9 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-    
+    public void MainMenu()
+    {
+        SceneManager.LoadSceneAsync("Main Menu");
+    }
 
 }
