@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 144718601}
   m_Layer: 0
   m_Name: fence (2)
-  m_TagString: Ground
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,7 +387,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.5, y: 4.5}
   m_EdgeRadius: 0
 --- !u!212 &144718603
 SpriteRenderer:
@@ -631,8 +631,8 @@ MonoBehaviour:
   gameOver: {fileID: 1129141528}
   gameOverText: {fileID: 371873277}
   restart: {fileID: 376085327}
-  speed: 6.37
-  jumpSpeed: 13
+  speed: 7
+  jumpSpeed: 14
   Red_Heart: {fileID: 1175448472}
   Red_Heart2: {fileID: 527148053}
   Red_Heart3: {fileID: 627871410}
@@ -1914,7 +1914,7 @@ GameObject:
   - component: {fileID: 1453207648}
   m_Layer: 0
   m_Name: fence (3)
-  m_TagString: Ground
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1989,7 +1989,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.5, y: 4.5}
   m_EdgeRadius: 0
 --- !u!212 &1453207650
 SpriteRenderer:
@@ -2147,7 +2147,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.5, y: 4.5}
   m_EdgeRadius: 0
 --- !u!212 &1573726370
 SpriteRenderer:
@@ -2469,7 +2469,7 @@ GameObject:
   - component: {fileID: 1934939508}
   m_Layer: 0
   m_Name: fence
-  m_TagString: Ground
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2517,7 +2517,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.12, y: 5.12}
+  m_Size: {x: 4.5, y: 4.5}
   m_EdgeRadius: 0
 --- !u!212 &1934939506
 SpriteRenderer:
