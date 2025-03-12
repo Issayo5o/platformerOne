@@ -1078,7 +1078,7 @@ GameObject:
   - component: {fileID: 497941341}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   SFXSource: {fileID: 147192248}
   background: {fileID: 8300000, guid: c3e731051d1134e968647cb983635693, type: 3}
   running: {fileID: 0}
-  jumping: {fileID: 0}
+  jumping: {fileID: 8300000, guid: 36d0cbdece85c4e5ba8390689f296ec0, type: 3}
 --- !u!1 &527148051
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,10 +27,15 @@ public class PlayerMovement : MonoBehaviour
     public Image Grey_Heart3;
 
     public int number = 0;
+
+    AudioManager audioManager;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     void Start()
     {
@@ -47,21 +52,20 @@ public class PlayerMovement : MonoBehaviour
         
         if (horizontalInput > .01f){
             transform.localScale = new Vector3(0.1f,0.1f,1);
-
         }
         else if (horizontalInput == 0){
             transform.localScale = new Vector3(0.1f,0.1f,1);
-            
+
         }
         else if (horizontalInput > -.01f){
             transform.localScale = new Vector3(-0.1f,0.1f,1);
-            
         }
         
         
         if(Input.GetKey(KeyCode.Space) && grounded)
         {
             Jump(); 
+            audioManager.PlaySFX(audioManager.jumping);
         }
 
         //Sets animator Paramters
