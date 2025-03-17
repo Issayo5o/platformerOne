@@ -105,6 +105,8 @@ public class PlayerMovement : MonoBehaviour
             Grey_Heart3.gameObject.SetActive(true);
             number = 3;
             gameOverText.gameObject.SetActive(true);
+            audioManager.stopMusic();
+            audioManager.PlaySFX(audioManager.losing);
             gameOver.EndGame();
             //with this number you could probably add a gameover method
         }

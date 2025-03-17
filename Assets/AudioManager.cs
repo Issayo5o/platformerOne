@@ -9,9 +9,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("---------- Audio Clip ---------")]
     public AudioClip background;
-    public AudioClip running;
+    public AudioClip losing;
     public AudioClip jumping;
-    //add more
 
     private void Start()
     {
@@ -22,6 +21,11 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
+    }
+
+    public void stopMusic()
+    {
+        musicSource.Stop();
     }
 
 }

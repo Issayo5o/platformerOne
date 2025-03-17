@@ -500,7 +500,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.489
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   musicSource: {fileID: 1799658708}
   SFXSource: {fileID: 147192248}
   background: {fileID: 8300000, guid: c3e731051d1134e968647cb983635693, type: 3}
-  running: {fileID: 0}
+  losing: {fileID: 8300000, guid: 1d34c7896b9ee47eaa12d42348b3b483, type: 3}
   jumping: {fileID: 8300000, guid: 36d0cbdece85c4e5ba8390689f296ec0, type: 3}
 --- !u!1 &527148051
 GameObject:
@@ -2683,9 +2683,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.257
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
