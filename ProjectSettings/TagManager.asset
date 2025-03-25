@@ -7,11 +7,12 @@ TagManager:
   - Ground
   - Obstacle
   - Audio
+  - Controls
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
