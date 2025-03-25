@@ -37,10 +37,6 @@ public class PlayerMovement : MonoBehaviour
 
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
