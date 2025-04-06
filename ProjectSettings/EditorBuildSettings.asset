@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Story Dialogue.unity
     guid: 753a55dd7ad698847a0c5377f26f8e99
+  - enabled: 1
+    path: Assets/controls.unity
+    guid: 9a10d37738e2141b58cf7af8ef06041e
   m_configObjects: {}
