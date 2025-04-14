@@ -2022,6 +2022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followSpeed: 7.44
   yOffset: 5
+  xOffset: 5
   target: {fileID: 188480117}
 --- !u!81 &1019354194
 AudioListener:

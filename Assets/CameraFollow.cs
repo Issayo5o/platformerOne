@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public float followSpeed = 7.48f; // How fast camera moves to target
-    public float yOffset = 1.84f; // Height of camera
+    public float followSpeed = 7.44f; // How fast camera moves to target
+    public float yOffset = 5f; // Height of camera
+    public float xOffset = 5f; 
     public Transform target; // Gives position of player
 
     
@@ -18,7 +19,7 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 newPos = new Vector3(target.position.x, target.position.y + yOffset, -10f);
+        Vector3 newPos = new Vector3(target.position.x + xOffset, target.position.y + yOffset, -10f);
         transform.position = Vector3.Slerp(transform.position, newPos, followSpeed * Time.deltaTime);
     }
 }
