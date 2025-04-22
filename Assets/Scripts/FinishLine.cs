@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 public class FinishLine : MonoBehaviour
 {
 
     public TextMeshProUGUI VictoryText;
+    public Button mainmenuButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class FinishLine : MonoBehaviour
 
             VictoryText.gameObject.SetActive(true);
             Time.timeScale = 0f;
+            mainmenuButton.gameObject.SetActive(true);
         }
     }
 }

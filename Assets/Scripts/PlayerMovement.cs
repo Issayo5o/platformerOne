@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public GameOver gameOver;
     public Image gameOverText;
     public Button restart;
+    public Button mainmenuButton;
 
     private Rigidbody2D body;
     [SerializeField] private float speed;
@@ -104,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
             audioManager.stopMusic();
             audioManager.PlaySFX(audioManager.losing);
             gameOver.EndGame();
+            mainmenuButton.gameObject.SetActive(true);
             //with this number you could probably add a gameover method
         }
     }
