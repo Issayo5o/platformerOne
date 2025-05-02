@@ -6,24 +6,18 @@ using UnityEngine.UI;
 
 public class Options : MonoBehaviour
 {
-    public Button continueButton;
-    public Button restartButton;
-    public Button mainmenuButton;
-    public Image optionsBackground;
-    public TextMeshProUGUI pausedText;
+    public Canvas optionsCanvas;
+    public PlayerMovement PlayerMovementScript;
+    public FinishLine finishLineScript;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && PlayerMovementScript.number < 2 && finishLineScript.isVictory == false)
         {
             Time.timeScale = 0;
-            continueButton.gameObject.SetActive(true);
-            restartButton.gameObject.SetActive(true);
-            mainmenuButton.gameObject.SetActive(true);
-            optionsBackground.gameObject.SetActive(true);
-            pausedText.gameObject.SetActive(true);
-            Debug.Log("Escape key was pressed!");
+            optionsCanvas.gameObject.SetActive(true);
+            Debug.Log("Escape key was pressed!");            
             // You can do stuff here, like open a pause menu or quit
         }
     }
@@ -31,10 +25,7 @@ public class Options : MonoBehaviour
     public void Unpause()
     {
         Time.timeScale = 1;
-        continueButton.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
-        mainmenuButton.gameObject.SetActive(false);
-        optionsBackground.gameObject.SetActive(false);
-        pausedText.gameObject.SetActive(false);
+        optionsCanvas.gameObject.SetActive(false);
+        Cursor.visible = false;
     }
 }

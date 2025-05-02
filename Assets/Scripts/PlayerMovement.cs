@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameOver gameOver;
     public Image gameOverText;
+    public Canvas gameOverCanvas;
     public Button restart;
     public Button mainmenuButton;
 
@@ -35,14 +36,13 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
+        Cursor.visible = false;
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         float horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
     // flip player when moving left and right
@@ -101,12 +101,11 @@ public class PlayerMovement : MonoBehaviour
             Red_Heart3.gameObject.SetActive(false);
             Grey_Heart3.gameObject.SetActive(true);
             number = 3;
-            gameOverText.gameObject.SetActive(true);
             audioManager.stopMusic();
             audioManager.PlaySFX(audioManager.losing);
             gameOver.EndGame();
-            mainmenuButton.gameObject.SetActive(true);
-            //with this number you could probably add a gameover method
+            gameOverCanvas.gameObject.SetActive(true);
+            Cursor.visible = true;
         }
     }
 
@@ -121,4 +120,8 @@ public class PlayerMovement : MonoBehaviour
         SceneManager.LoadSceneAsync("Main Menu");
     }
 
+    public void NextLevel()
+    {
+        SceneManager.LoadSceneAsync("Coming soon");
+    }
 }
