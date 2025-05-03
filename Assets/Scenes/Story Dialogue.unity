@@ -614,7 +614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 414.7, y: 266.43}
+  m_AnchoredPosition: {x: 414.7, y: 217}
   m_SizeDelta: {x: 366.3, y: 400.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209728209
@@ -638,18 +638,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Once a celebrated Olympic track and field champion, Sammy was the epitome
-    of strength, agility, and perseverance. But in a cruel twist of fate, a devastating
-    injury cut his career short during what should have been his crowning moment
-    at the Winter Games. Two years later, Sammy steps back into the spotlight, not
-    for glory, but for purpose\u2014he\u2019s taking on a grueling obstacle course
-    to raise funds for the Jets Charity, a cause close to his heart, hosted by Miramar
-    College. The course is more than just a physical challenge; it\u2019s a battle
-    against the shadows of his past. From hurdling barriers reminiscent of his Olympic
-    triumphs to sliding under icy crawlspaces and scaling daunting walls, every step
-    is a test of his resilience. As the obstacles intensify, so does the pressure
-    to prove that a champion's spirit is unbreakable. Can Sammy conquer the course
-    and inspire a new generation at Miramar College, or will the weight of his past
-    hold him back?"
+    of speed and perseverance. But in a cruel twist of fate, a devastating injury
+    cut his career short during what should have been his crowning moment at the
+    Winter Games. Two years later, Sammy steps back into the spotlight, not for glory,
+    but for purpose. He\u2019s taking on a grueling obstacle course to raise funds
+    for the Jets Charity, hosted by Miramar College. From hurdling barriers reminiscent
+    of his Olympic triumphs to scaling daunting walls, every step is a test of his
+    resilience. As the obstacles intensify, so does the pressure to strengthen his
+    Champion spirit and raise funds for charity. Play as Sammy and conquer your obstacles
+    as you inspire a new generation at Miramar College!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
