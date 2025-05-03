@@ -17,7 +17,8 @@ public class Options : MonoBehaviour
         {
             Time.timeScale = 0;
             optionsCanvas.gameObject.SetActive(true);
-            Debug.Log("Escape key was pressed!");            
+            Debug.Log("Escape key was pressed!");
+            Cursor.visible = true;
             // You can do stuff here, like open a pause menu or quit
         }
     }
